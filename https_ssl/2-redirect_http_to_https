@@ -41,7 +41,7 @@ frontend adossi-frontend
         default_backend adossi-backend
 
 frontend adossi-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/adossi.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.adossi.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend adossi-backend
 
